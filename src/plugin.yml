@@ -1,0 +1,9 @@
+main: fr.birdo.speedrun.speedrun
+
+name: SpeedRun
+
+description: Plugin pour les speedrun.
+
+author: Birdo
+
+version: 1.0
