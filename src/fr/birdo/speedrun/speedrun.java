@@ -10,7 +10,7 @@ public class speedrun extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE+"[SpeedRun] Plugin activé !");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE+"[SpeedRun] Plugin active !");
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new EndPortalEvent(this), this);
         pm.registerEvents(new NetherPortalEvent(this), this);
@@ -21,6 +21,6 @@ public class speedrun extends JavaPlugin {
 
     @Override
     public void onDisable(){
-        Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE+"[SpeedRun] Plugin désactivé !");
+        Bukkit.getConsoleSender().sendMessage(ChatColor.BLUE+"[SpeedRun] Plugin desactive !");
     }
 }

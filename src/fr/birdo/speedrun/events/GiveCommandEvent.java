@@ -17,6 +17,8 @@ public class GiveCommandEvent implements Listener {
     ItemStack LockedChest2 = fr.birdo.speedrun.blocks.LockedChest.getItemStackChest2();
     ItemStack LockedChestKey1 = fr.birdo.speedrun.items.LockedChestKey.getItemStackKey1();
     ItemStack LockedChestKey2 = fr.birdo.speedrun.items.LockedChestKey.getItemStackKey2();
+    ItemStack EnderPortalSupport = fr.birdo.speedrun.blocks.PortalSupport.getItemStackEnder();
+    ItemStack NetherPortalSupport = fr.birdo.speedrun.blocks.PortalSupport.getItemStackNether();
 
     @EventHandler
     public void onCommand(PlayerCommandPreprocessEvent e) {
@@ -44,6 +46,16 @@ public class GiveCommandEvent implements Listener {
                     }
                     if(args[2].equalsIgnoreCase("2")){
                         p.getInventory().addItem(LockedChestKey2);
+                        e.setCancelled(true);
+                    }
+                }
+                if (args[1].equalsIgnoreCase("plugin:PortalSupport")) {
+                    if(args[2].equalsIgnoreCase("Nether")){
+                        p.getInventory().addItem(NetherPortalSupport);
+                        e.setCancelled(true);
+                    }
+                    if(args[2].equalsIgnoreCase("Ender")){
+                        p.getInventory().addItem(EnderPortalSupport);
                         e.setCancelled(true);
                     }
                 }

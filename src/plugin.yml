@@ -7,3 +7,5 @@ description: Plugin pour les speedrun.
 author: Birdo
 
 version: 1.0
+
+api-version: 1.16
