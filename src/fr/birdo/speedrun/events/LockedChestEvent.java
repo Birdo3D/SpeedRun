@@ -19,7 +19,7 @@ public class LockedChestEvent implements Listener {
         if (event.getAction() != null) {
             if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
                 if (event.getClickedBlock() != null) {
-                    if (event.getClickedBlock().getType() == Material.TRAPPED_CHEST) {
+                    if (event.getClickedBlock().getType() == Material.RED_SHULKER_BOX) {
                         if (event.getPlayer().getInventory().getItemInMainHand() != null) {
                             if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.TRIPWIRE_HOOK) {
                                 if (event.getPlayer().getInventory().getItemInMainHand().hasItemMeta() && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().hasDisplayName() && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equalsIgnoreCase("Key for Chest 1")) {
@@ -38,7 +38,7 @@ public class LockedChestEvent implements Listener {
                         }
                     }
 
-                    if (event.getClickedBlock().getType() == Material.ENDER_CHEST) {
+                    if (event.getClickedBlock().getType() == Material.GREEN_SHULKER_BOX) {
                         if (event.getPlayer().getInventory().getItemInMainHand() != null) {
                             if (event.getPlayer().getInventory().getItemInMainHand().getType() == Material.TRIPWIRE_HOOK) {
                                 if (event.getPlayer().getInventory().getItemInMainHand().hasItemMeta() && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().hasDisplayName() && event.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equalsIgnoreCase("Key for Chest 2")) {
